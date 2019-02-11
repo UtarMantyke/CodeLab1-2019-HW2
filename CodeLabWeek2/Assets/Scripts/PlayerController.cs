@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 	
 	public int Score = 0;
 	
-	private Rigidbody2D rb;
+	public Rigidbody2D rb;
 
 	// Use this for initialization
 	void Start ()
@@ -33,25 +33,21 @@ public class PlayerController : MonoBehaviour
 		
 		if (Input.GetKey(upKey)) //When someone presses "W"
 		{
-			Debug.Log("Pressed W");
 			newForce.y += forceAmount;
 		}
 		
 		if (Input.GetKey(downKey)) //When someone presses "S"
 		{
-			Debug.Log("Pressed S");
 			newForce.y -= forceAmount;
 		}
 		
 		if (Input.GetKey(leftKey)) //When someone presses "A"
 		{
-			Debug.Log("Pressed A");
 			newForce.x -= forceAmount;
 		}
 		
 		if (Input.GetKey(rightKey)) //When someone presses "D"
 		{
-			Debug.Log("Pressed D");
 			newForce.x += forceAmount;
 		}
 		
